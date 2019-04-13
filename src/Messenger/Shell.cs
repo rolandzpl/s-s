@@ -2,9 +2,9 @@
 
 namespace Messenger
 {
-	public partial class MessengerForm : Form
+	public partial class Shell : Form
 	{
-		public MessengerForm()
+		public Shell()
 		{
 			InitializeComponent();
 		}

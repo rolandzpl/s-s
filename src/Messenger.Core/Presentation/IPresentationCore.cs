@@ -1,11 +1,10 @@
 ﻿using Messenger.Presentation.ViewModels;
+using System;
 
 namespace Messenger.Presentation
 {
 	public interface IPresentationCore
 	{
-		void Show(ViewModelBase viewModel);
-
-		IView CreateView();
+		IView CreateView(Type viewModelType);
 	}
 }

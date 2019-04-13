@@ -20,7 +20,7 @@ namespace Messenger.Presentation.Presenters
 
 		public void Show()
 		{
-			view = context.CreateView();
+			view = context.CreateView(typeof(MessageViewModel));
 			viewModel = new MessageViewModel(
 				new DelegatedCommand(OnExecuteOkCommand, OnCanExecuteOkCommand),
 				new DelegatedCommand(OnExecuteCancelCommand, OnCanExecuteCancelCommand));

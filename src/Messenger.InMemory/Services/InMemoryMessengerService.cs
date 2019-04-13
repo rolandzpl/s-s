@@ -1,10 +1,12 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace Messenger.Services
 {
-	class InMemoryMessengerService
+	public class InMemoryMessengerService : IMessengerService
 	{
+		public void SendMessage(MessageDto messageDto)
+		{
+			throw new NotImplementedException();
+		}
 	}
 }
