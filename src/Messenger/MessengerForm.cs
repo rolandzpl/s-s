@@ -4,7 +4,7 @@ namespace Messenger
 {
 	public partial class MessengerForm : Form
 	{
-		public MessengerForm(MessageViewModel viewModel)
+		public MessengerForm()
 		{
 			InitializeComponent();
 		}
