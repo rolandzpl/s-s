@@ -6,7 +6,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Messenger.Core\Messenger.Core.csproj" />
+    <ProjectReference Include="..\Messenger\Messenger.csproj" />
   </ItemGroup>
 
 </Project>
