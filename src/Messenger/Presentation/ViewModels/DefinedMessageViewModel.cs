@@ -4,10 +4,17 @@ namespace Messenger.Presentation.ViewModels
 {
 	public class DefinedMessageViewModel : ViewModelBase
 	{
+		private Guid id;
 		private string messageText;
 		private bool isFavorite;
 		private ImageRef imageRef;
 		private TimeSpan? printSpan;
+
+		public Guid Id
+		{
+			get { return id; }
+			set { SetValue(ref id, value, nameof(Id)); }
+		}
 
 		public string MessageText
 		{

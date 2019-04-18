@@ -18,7 +18,9 @@ namespace Messenger.Views
 		public void Show(ViewModelBase viewModel)
 		{
 			StartViewViewModel vm = (StartViewViewModel)viewModel;
-			this.lbFavorites.DataBindings.Add(nameof(ListBox.Items), vm, nameof(vm.FavoriteMessages));
+			this.lbFavorites.DataSource = vm.FavoriteMessages;
+			this.lbFavorites.DisplayMember = nameof(DefinedMessageViewModel.MessageText);
+			this.lbFavorites.ValueMember = nameof(DefinedMessageViewModel.Id);
 			Visible = true;
 		}
 	}
